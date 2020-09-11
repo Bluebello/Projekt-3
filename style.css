@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Architects Daughter", sans-serif;
+    background-color: lightblue
+}
+
+.wrapper {
+    width: 400px;
+    background-color: beige;
+    box-shadow: 0 0 10px gray;
+}
+
+form {
+    padding: 40px;
+    font-size: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-box {
+    margin-bottom: 15px;
+}
+
+.form-box label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.form-box.error input {
+    border: 1px solid blue;
+    background-color: ghostwhite;
+}
+
+.error-text {
+    margin: 5px 0 0 10px;
+    font-size: 14px;
+    color: blue;
+    visibility: hidden;
+}
+
+.form-box.error .error-text {
+    visibility: visible;
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.send,
+.clear,
+.close {
+    display: block;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+    font-size: 18px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.popup p {
+    font-size: 28px;
+}
+
+.popup .close {
+    margin-top: 30px;
+}
